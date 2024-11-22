@@ -1,3 +1,5 @@
+require('dotenv').config();
+const api = process.env.API_KEY;
 const BASE_URL =
   `https://v6.exchangerate-api.com/v6/${api}/latest/`;
 
