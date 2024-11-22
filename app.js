@@ -1,9 +1,17 @@
 let api;
+
 const fetchApiKey = async () => {
-  api = process.env.apiKey; 
+  // Fetch the API key from an external service or storage
+  api = await fetch('/path/to/api-key')
+            .then(response => response.text())
+            .catch(error => console.error("Error fetching API key:", error));
 };
 
-fetchApiKey(); 
+fetchApiKey().then(() => {
+  const BASE_URL = `https://v6.exchangerate-api.com/v6/${api}/latest/`;
+  // Continue with the rest of your logic
+});
+
 
 const BASE_URL =
   `https://v6.exchangerate-api.com/v6/${api}/latest/`;
