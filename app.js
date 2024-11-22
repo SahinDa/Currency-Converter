@@ -1,5 +1,5 @@
 const BASE_URL =
-  `https://v6.exchangerate-api.com/v6/${api}/latest/`;
+  `https://v6.exchangerate-api.com/v6/${process.env.api}/latest/`;
 
   const dropdowns = document.querySelectorAll(".dropdown select");
   const btn=document.querySelector(".btn");
