@@ -1,4 +1,10 @@
-const api=process.env.apiKey;
+let api;
+const fetchApiKey = async () => {
+  api = process.env.apiKey;  // No need for 'await' here
+};
+
+fetchApiKey(); 
+
 const BASE_URL =
   `https://v6.exchangerate-api.com/v6/${api}/latest/`;
 
