@@ -7,6 +7,7 @@ const BASE_URL =
   const toCurr=document.querySelector(".to select");
   const msg=document.querySelector(".msg input");
 
+    console.log(countryList['BBD'])
   for(let select of dropdowns){
     for(currCode in countryList){
         let newOption=document.createElement("option");
