@@ -1,4 +1,4 @@
-let api= process.env.apiKey; 
+let api=  process.env.NEXT_PUBLIC_API_KEY;
 console.log(api);
 
 const BASE_URL =
