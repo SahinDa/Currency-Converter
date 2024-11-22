@@ -1,5 +1,4 @@
 // api key is getting from config.js file 
-let api="d5129ea2b24fd4a7bf478cf8";
 const BASE_URL =
   `https://v6.exchangerate-api.com/v6/${api}/latest/`;
 
