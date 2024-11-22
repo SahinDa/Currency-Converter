@@ -2,7 +2,7 @@ let api;
 
 const fetchApiKey = async () => {
   // Fetch the API key from an external service or storage
-  api = await fetch('process.env.apiKey')
+  api = await fetch(process.env.apiKey)
             .then(response => response.text())
             .catch(error => console.error("Error fetching API key:", error));
 };
