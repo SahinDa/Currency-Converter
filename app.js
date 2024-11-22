@@ -1,5 +1,8 @@
-let api=  process.env.NEXT_PUBLIC_API_KEY;
-console.log(api);
+let api;
+(async () => {
+  api = process.env.NEXT_PUBLIC_API_KEY; // Get API key from environment variable
+  console.log(api); // Do something with the API key
+})();
 
 const BASE_URL =
   `https://v6.exchangerate-api.com/v6/${api}/latest/`;
