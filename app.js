@@ -1,6 +1,6 @@
 let api;
 const fetchApiKey = async () => {
-  api = process.env.apiKey;  // No need for 'await' here
+  api = process.env.apiKey; 
 };
 
 fetchApiKey(); 
